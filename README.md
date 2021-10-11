@@ -1,3 +1,6 @@
+It is a simplified way of implementing a wrapper around the official speedtest-cli, originally developed in this repo:
+https://github.com/tommyjlong/SpeedTest-CLI-With-Home-Assistant
+
 # SpeedTest To Home Assistant
 This project provides a way for Home Assistant to run the OKLA official `speedtest.net` binary (binary running on Linux) using an automation.  It consists of the following:
 * OKLA [Speedtest-cli binary](https://www.speedtest.net/apps/cli)
