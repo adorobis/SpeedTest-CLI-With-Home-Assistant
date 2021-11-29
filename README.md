@@ -32,11 +32,11 @@ process = subprocess.Popen([SPEEDTEST_PATH,'--format=json','--precision=4', '--a
 ```
 
 ## HA Configuration and Automation
-* Configure a command_line sensor e.g.:
+* Configure a command_line sensor e.g.: Adjust path and name of the python script to your situation.
 ```
 - platform: command_line
   name: Speedtest Ping
-  command: "python3.8 /root/st.py"
+  command: "python3.8 /root/speedtest-cli-2ha.py"
   value_template: "{{ value_json.ping | round(1) }}"
   command_timeout: 30
   scan_interval: 1800
