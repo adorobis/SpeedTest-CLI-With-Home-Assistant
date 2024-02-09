@@ -52,12 +52,13 @@ Configure two template sensors to get download and upload speeds from the comman
 ```
 template:
   - sensor:
-    - name: Speedtest Download
-      state: '{{ state_attr("sensor.speedtest_ping", "download") | round(2) }}'
-      unit_of_measurement: Mbit/s
-    - name: Speedtest Upload
-      state: '{{ state_attr("sensor.speedtest_ping", "upload") | round(2) }}'
-      unit_of_measurement: Mbit/s
+     - name: Speedtest Download
+       state: '{{ state_attr("sensor.speedtest_ping", "download") | round(2) }}'
+       unit_of_measurement: Mbit/s
+ 
+     - name: Speedtest Upload
+       state: '{{ state_attr("sensor.speedtest_ping", "upload") | round(2) }}'
+       unit_of_measurement: Mbit/s
 ```
 
 ## Testing and Debugging
